@@ -10,8 +10,8 @@
 #     print(soup.getText())
 
 payload = {
-    'username': 'loay222929',
-    'password': 'ahl21tc9'
+    'username': '', #username goes here
+    'password': ''  #password goes here
 }
 
 # Use 'with' to ensure the session context is closed after use.
