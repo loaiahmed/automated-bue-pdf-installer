@@ -12,5 +12,9 @@ you can check your chrome version by searching in chrome::version
 python used:
 python                    3.12.0
 
-packages installed:
-selenium                  3.141.0 
+python packages installed:
+selenium                  3.141.0
+
+requirments:
+chrome browser
+chrome driver
