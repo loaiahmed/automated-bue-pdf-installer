@@ -42,11 +42,7 @@ import os
 from selenium import webdriver
 
 
-download_dir = r"C:\Users\LoaiSalem9\Documents\CODE\Python\automated-bue-pdf-installer\testing"
-# profile = {"plugins.plugins_list": [{"enabled": False, "name": "Chrome PDF Viewer"}], # Disable Chrome's PDF Viewer
-#                "download.default_directory": download_dir , "download.extensions_to_open": "applications/pdf"}
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option("prefs", profile)
+download_dir = r"\testing"  #change installation directory from here
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {
@@ -56,7 +52,7 @@ options.add_experimental_option('prefs', {
 "plugins.always_open_pdf_externally": True #It will not show PDF directly in chrome
 })
 
-driver = webdriver.Chrome(executable_path=r'C:\Users\LoaiSalem9\Documents\CODE\Python\chromedriver-win64\chromedriver.exe', options=options)
+driver = webdriver.Chrome(executable_path=r'\chromedriver-win64\chromedriver.exe', options=options) # chrome driver directory put here
 driver.get('https://learn1.bue.edu.eg/login/index.php')
 driver.maximize_window()
 
